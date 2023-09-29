@@ -6,3 +6,6 @@ class Advertisements(models.Model):
     auction = models.BooleanField("Торг", help_text="Отметьте, если торг уместен")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        db_table = 'advertisements'
