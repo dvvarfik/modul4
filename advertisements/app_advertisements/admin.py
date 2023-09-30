@@ -17,7 +17,7 @@ class AdvertisementAdmin(admin.ModelAdmin):
         })
     )
 
-    @admin.display(description='Thumbnail')
+    @admin.display(description='Изображение')
     def thumbnail(self, obj):
         if obj.image:
             return format_html('<img src="{}" height="50" width="50" />', obj.image.url)
